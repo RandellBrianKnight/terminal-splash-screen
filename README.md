@@ -6,21 +6,14 @@ You may see more of his work at https://www.pippim.com/
 The heavy lifting is the splash component that shows something like this:
 
 $ now
- 
-Weather report: Edmonton               March 2018            ┌────────────────────────────┐
-                                  Su Mo Tu We Th Fr Sa       │   ┏━┓╺┓  ┏━┓┏━┓   ┏━┓┏┳┓   │
-     \   /     Sunny                           1  2  3       │   ┃┃┃ ┃ ╹┏━┛┗━┫   ┣━┛┃┃┃   │
-      .-.      -23--14 °C          4  5  6  7  8  9 10       │   ┗━┛╺┻╸╹┗━╸┗━┛   ╹  ╹ ╹   │
-   ― (   ) ―   ↘ 22 km/h          11 12 13 14 15 16 17       └────────────────────────────┘
-      `-’      14 km              18 19 20 21 22 23 24  
-     /   \     0.9 mm             25 26 27 28 29 30 31  
 
 Save the `~/.bashrc" file changes.
-To display the Ubuntu information you need screenfetch:
+To display the Ubuntu information (or other distro) you need screenfetch:
 
 sudo apt install screenfetch
 
-There are similar display packages to screenfetch so shop around!
+There are similar display packages to screenfetch, like neofetch, so shop around!
+
 If you want the same command prompt with "─────────" dividing line between commands, change these lines:
 
 if [ "$color_prompt" = yes ]; then
@@ -30,6 +23,7 @@ else
     PS1='───────────────────────────────────────────────────────────────────────────────────────────
 ${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
+
 unset color_prompt force_color_prompt
 
 For more information about PS1 see https://www.warp.dev/blog/whats-so-special-about-ps1
